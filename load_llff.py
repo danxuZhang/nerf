@@ -1,5 +1,6 @@
 import numpy as np
-import os, imageio
+import os
+import imageio.v2 as imageio
 
 
 ########## Slightly modified version of LLFF data loading code
@@ -122,7 +123,7 @@ def _load_data(basedir, factor=None, width=None, height=None, load_imgs=True):
 
     def imread(f):
         if f.endswith("png"):
-            return imageio.imread(f, ignoregamma=True)
+            return imageio.imread(f, format="PNG-PIL", ignoregamma=True)
         else:
             return imageio.imread(f)
 
