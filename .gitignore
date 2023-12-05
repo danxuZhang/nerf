@@ -2,6 +2,9 @@
 .vscode/
 .idea/
 
+pbs_logs/
+*.log
+
 **/.ipynb_checkpoints
 **/__pycache__
 *.png
